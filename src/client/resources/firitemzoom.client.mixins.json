@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "top.catnies.firitemzoom.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "GameRendererMixin",
+    "HandledScreenAccessor",
+    "HandledScreenMixin",
+    "InventoryScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

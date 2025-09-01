@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "firitemzoom",
+  "version": "${version}",
+  "name": "FirItemZoom",
+  "description": "杉云镇GUI左侧放大物品Mod",
+  "authors": [
+    "Nicoppa"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/firitemzoom/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "top.catnies.firitemzoom.FirItemZoomClient"
+    ],
+    "main": [
+      "top.catnies.firitemzoom.Firitemzoom"
+    ]
+  },
+  "mixins": [
+    "firitemzoom.mixins.json",
+    {
+      "config": "firitemzoom.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "java": ">=21",
+    "fabric-api": "*",
+    "minecraft": "1.21.8"
+  }
+}
